@@ -1,0 +1,25 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"plugins": ["html"],
+	"parserOptions": {
+		"parser": "babel-eslint"
+	},
+	"extends": ["airbnb-base", "plugin:prettier/recommended"],
+	"rules": {
+		"import/no-unresolved": 0,
+		"quotes": ["error", "single"],
+		"prettier/prettier": [
+			"error",
+			{
+				"singleQuote": true,
+				"useTabs": false,
+                "trailingComma": "es5",
+                "endOfLine":"auto"
+			}
+		]
+	}
+}
